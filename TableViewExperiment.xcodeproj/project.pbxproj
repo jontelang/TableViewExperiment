@@ -20,6 +20,9 @@
 		4D27D06D1F63FAC0000CEEE7 /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D27D0641F63FAC0000CEEE7 /* BaseTableViewDataSource.m */; };
 		4D27D06E1F63FAC0000CEEE7 /* BaseTableViewEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D27D0661F63FAC0000CEEE7 /* BaseTableViewEntry.m */; };
 		4D27D06F1F63FAC0000CEEE7 /* BaseTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D27D0681F63FAC0000CEEE7 /* BaseTableViewSection.m */; };
+		4D27D0771F6403AC000CEEE7 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D27D0761F6403AC000CEEE7 /* ImageCell.xib */; };
+		4D27D07A1F6403E8000CEEE7 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D27D0791F6403E8000CEEE7 /* ImageCell.m */; };
+		4D27D07C1F640464000CEEE7 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D27D07B1F640464000CEEE7 /* img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,10 @@
 		4D27D0661F63FAC0000CEEE7 /* BaseTableViewEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewEntry.m; sourceTree = "<group>"; };
 		4D27D0671F63FAC0000CEEE7 /* BaseTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewSection.h; sourceTree = "<group>"; };
 		4D27D0681F63FAC0000CEEE7 /* BaseTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewSection.m; sourceTree = "<group>"; };
+		4D27D0761F6403AC000CEEE7 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		4D27D0781F6403E8000CEEE7 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		4D27D0791F6403E8000CEEE7 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		4D27D07B1F640464000CEEE7 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +85,10 @@
 		4D27D0431F63F9B1000CEEE7 /* TableViewExperiment */ = {
 			isa = PBXGroup;
 			children = (
+				4D27D0751F640381000CEEE7 /* Examples */,
 				4D27D05B1F63FAC0000CEEE7 /* SourceFiles */,
 				4D27D0471F63F9B1000CEEE7 /* AppDelegate.h */,
 				4D27D0481F63F9B1000CEEE7 /* AppDelegate.m */,
-				4D27D04A1F63F9B1000CEEE7 /* ViewController.h */,
-				4D27D04B1F63F9B1000CEEE7 /* ViewController.m */,
 				4D27D04D1F63F9B1000CEEE7 /* Main.storyboard */,
 				4D27D0501F63F9B1000CEEE7 /* Assets.xcassets */,
 				4D27D0521F63F9B1000CEEE7 /* LaunchScreen.storyboard */,
@@ -103,13 +109,36 @@
 		4D27D05B1F63FAC0000CEEE7 /* SourceFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4D27D05C1F63FAC0000CEEE7 /* BaseTableView.h */,
-				4D27D05D1F63FAC0000CEEE7 /* BaseTableView.m */,
+				4D27D0731F640367000CEEE7 /* Controller */,
+				4D27D0721F64035D000CEEE7 /* Datasource */,
+				4D27D0711F640349000CEEE7 /* UI Element */,
+				4D27D0701F64033D000CEEE7 /* Cells */,
+			);
+			path = SourceFiles;
+			sourceTree = "<group>";
+		};
+		4D27D0701F64033D000CEEE7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				4D27D05E1F63FAC0000CEEE7 /* BaseTableViewCell.h */,
 				4D27D05F1F63FAC0000CEEE7 /* BaseTableViewCell.m */,
 				4D27D0601F63FAC0000CEEE7 /* BaseTableViewCell.xib */,
-				4D27D0611F63FAC0000CEEE7 /* BaseTableViewController.h */,
-				4D27D0621F63FAC0000CEEE7 /* BaseTableViewController.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4D27D0711F640349000CEEE7 /* UI Element */ = {
+			isa = PBXGroup;
+			children = (
+				4D27D05C1F63FAC0000CEEE7 /* BaseTableView.h */,
+				4D27D05D1F63FAC0000CEEE7 /* BaseTableView.m */,
+			);
+			name = "UI Element";
+			sourceTree = "<group>";
+		};
+		4D27D0721F64035D000CEEE7 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
 				4D27D0631F63FAC0000CEEE7 /* BaseTableViewDataSource.h */,
 				4D27D0641F63FAC0000CEEE7 /* BaseTableViewDataSource.m */,
 				4D27D0651F63FAC0000CEEE7 /* BaseTableViewEntry.h */,
@@ -117,7 +146,29 @@
 				4D27D0671F63FAC0000CEEE7 /* BaseTableViewSection.h */,
 				4D27D0681F63FAC0000CEEE7 /* BaseTableViewSection.m */,
 			);
-			path = SourceFiles;
+			name = Datasource;
+			sourceTree = "<group>";
+		};
+		4D27D0731F640367000CEEE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D27D0611F63FAC0000CEEE7 /* BaseTableViewController.h */,
+				4D27D0621F63FAC0000CEEE7 /* BaseTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4D27D0751F640381000CEEE7 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				4D27D07B1F640464000CEEE7 /* img.png */,
+				4D27D04A1F63F9B1000CEEE7 /* ViewController.h */,
+				4D27D04B1F63F9B1000CEEE7 /* ViewController.m */,
+				4D27D0761F6403AC000CEEE7 /* ImageCell.xib */,
+				4D27D0781F6403E8000CEEE7 /* ImageCell.h */,
+				4D27D0791F6403E8000CEEE7 /* ImageCell.m */,
+			);
+			name = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +233,8 @@
 				4D27D06B1F63FAC0000CEEE7 /* BaseTableViewCell.xib in Resources */,
 				4D27D0541F63F9B1000CEEE7 /* LaunchScreen.storyboard in Resources */,
 				4D27D0511F63F9B1000CEEE7 /* Assets.xcassets in Resources */,
+				4D27D07C1F640464000CEEE7 /* img.png in Resources */,
+				4D27D0771F6403AC000CEEE7 /* ImageCell.xib in Resources */,
 				4D27D04F1F63F9B1000CEEE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D27D06A1F63FAC0000CEEE7 /* BaseTableViewCell.m in Sources */,
+				4D27D07A1F6403E8000CEEE7 /* ImageCell.m in Sources */,
 				4D27D0691F63FAC0000CEEE7 /* BaseTableView.m in Sources */,
 				4D27D06D1F63FAC0000CEEE7 /* BaseTableViewDataSource.m in Sources */,
 				4D27D06F1F63FAC0000CEEE7 /* BaseTableViewSection.m in Sources */,
